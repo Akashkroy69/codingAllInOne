@@ -1,0 +1,21 @@
+
+print("Some important syntax\n")
+
+print(5/2)
+print(5//2)
+
+print('Akash')
+print("Akash")
+
+print('Akash\'s "leg"')
+print('Akash\'s Leg') # \ is being used as a placeholder that disables the 
+#original meaning of ' here.
+
+print( 4 * 3 ) #multiplication
+
+print( 4 ** 3 )    #Power: 4^3
+
+print("c:\doc\new folder \n")  #\n is going to work as placeholder here.
+
+print(r"c:\doc\new folder \n") # r stands for raw.
+

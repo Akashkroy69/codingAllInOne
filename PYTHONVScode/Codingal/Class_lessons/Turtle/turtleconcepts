@@ -1,0 +1,22 @@
+## Import the turtle module
+import turtle #turtle is a built-in Python library that allows us to create graphics and drawings.
+
+# Create a turtle object
+turtleObj = turtle.Turtle()
+
+# Draws a square
+#Explanation:  The loop runs 4 times, and in each iteration, the turtle moves forward by 100 units and then turns right by 90 degrees. This combination of moving forward and turning right four times creates a square shape
+for _ in range(4):
+  turtleObj.forward(100)
+  turtleObj.right(90)
+
+# Why have we used _ ? Can we use any other symbol?
+# In Python, it is a convention to use an underscore as a variable name when you don't need to use the value of the loop variable inside the loop.
+#No we can't use any other symbol instead of _.
+
+
+# Keep the window open until it's closed by the user
+turtle.done() #After drawing the square, we call the turtle.done() function to keep the window open until it's closed by the user. This prevents the window from closing immediately after the drawing is complete, allowing us to view the drawing.
+
+
+

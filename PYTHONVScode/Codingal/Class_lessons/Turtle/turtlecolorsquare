@@ -1,0 +1,16 @@
+import turtle
+
+# Create a turtle object
+t = turtle.Turtle()
+
+# Define a list of colors
+colors = ["red", "green", "blue", "purple"]
+
+# Draw a square with each side having a different color
+for i in range(4):
+    t.color(colors[i])  # Set the color of the turtle for the current side
+    t.forward(100)      # Move the turtle forward by 100 units
+    t.left(90)          # Turn the turtle left by 90 degrees
+
+# Keep the window open until it's closed by the user
+turtle.done()

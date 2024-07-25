@@ -1,0 +1,36 @@
+import turtle
+import colorsys
+
+# Create a turtle screen
+screen = turtle.Screen()
+screen.bgcolor("black")
+
+# Create a turtle and set its attributes
+spiral_turtle = turtle.Turtle()
+spiral_turtle.shape("turtle")
+spiral_turtle.speed(0)  # Set the maximum drawing speed
+
+# Function to draw a rainbow spiral
+def draw_rainbow_spiral():
+    radius = 10  # Initial radius
+    for _ in range(200):
+        hue = _ / 200.0  # Varies the color along the spectrum
+        color = colorsys.hsv_to_rgb(hue, 1, 1)  # Convert HSV to RGB
+        spiral_turtle.color(color)
+        spiral_turtle.forward(radius)
+        spiral_turtle.right(59)  # Adjust the angle for a spiral effect
+        radius += 1
+
+# Move to the starting position
+spiral_turtle.penup()
+spiral_turtle.goto(0, -200)
+spiral_turtle.pendown()
+
+# Draw the rainbow spiral
+draw_rainbow_spiral()
+
+# Hide the turtle
+spiral_turtle.hideturtle()
+
+# Close the canvas when clicked
+screen.exitonclick()

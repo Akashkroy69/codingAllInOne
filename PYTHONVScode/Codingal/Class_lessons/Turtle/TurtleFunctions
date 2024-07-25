@@ -1,0 +1,43 @@
+# Import the turtle module
+import turtle #turtle is a built-in Python library that allows us to create graphics and drawings
+
+# 1. turtle.forward(distance)
+# Moves the turtle forward by the specified distance in the direction it's facing.
+t = turtle.Turtle() # Create a turtle object
+
+t.forward(200)  # Move forward by 100 units
+
+#2. turtle.backward(distance)
+# Moves the turtle backward by the specified distance.
+t.backward(50)  # Move backward by 50 units
+
+#3. turtle.right(angle)
+#Turns the turtle right by the specified angle in degrees.
+t.right(270)  # Turn right by 90 degrees
+
+# turtle.left(angle)
+# Turns the turtle left by the specified angle in degrees.
+t.left(45)  # Turn left by 45 degrees
+
+# turtle.penup()
+# Lifts the pen, so the turtle can move without drawing.
+t.penup()    # Lift the pen
+t.forward(50)  # Move forward without drawing
+
+# turtle.pendown()
+# Puts the pen down, so the turtle can draw as it moves.
+t.pendown()   # Put the pen down
+t.forward(100)  # Move forward and draw a line
+
+# turtle.color(color)
+# Sets the color of the turtle and the pen.
+t.color("red")  # Set the turtle and pen color to red
+t.right(150)
+t.forward(100)  # Move forward and draw a red line
+
+# turtle.pensize(width)
+# Sets the thickness of the lines drawn by the turtle.
+t.pensize(3)    # Set the pen thickness to 3
+t.forward(100)  # Move forward and draw a thick line
+
+turtle.done()
