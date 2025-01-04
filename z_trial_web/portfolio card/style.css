@@ -1,0 +1,24 @@
+.card {
+    height: 400px;
+    width: 300px;
+    background-color: #333232;
+    color: white;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: all 3s ease;
+    margin: 0px auto;
+    text-align: center;
+  }
+
+  .card:hover {
+    transform: perspective(1000px) rotateY(30deg);
+    box-shadow: 10px 10px 20px 0px red;
+
+  }
+
+  .card img {
+    height: 200px;
+    width: 100%;
+    border-radius: 20px;
+  }

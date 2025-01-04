@@ -24,3 +24,17 @@
 # turtle.done()
 
 
+import turtle
+
+t = turtle.Turtle()
+t.speed(0)
+colors = ["red", "yellow", "green", "blue", "purple", "orange"]
+for x in range(100):
+    t.color(colors[x % 6])
+    t.begin_fill()
+    
+    t.forward(5*x)
+    t.left(170)
+    t.end_fill()
+
+turtle.done()

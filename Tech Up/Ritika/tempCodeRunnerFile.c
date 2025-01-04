@@ -1,0 +1,1 @@
+  int lastindex=size-1;
