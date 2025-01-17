@@ -1,0 +1,20 @@
+Categorical Data in Data Science
+
+Categorical data represents variables that contain labels or categories instead of numerical values. This data is often used to classify information into distinct groups. It's a crucial type of data in data science, especially when working with machine learning models or descriptive statistics.
+Examples of Categorical Data
+
+    Gender: Male, Female, Other
+    Color: Red, Green, Blue
+    Animal Type: Dog, Cat, Bird
+    Yes/No Responses: Yes, No
+    Rating: Good, Average, Poor
+
+Types of Categorical Data
+
+    Nominal Data:
+        Represents categories with no inherent order.
+        Example: Colors of shirts (Red, Green, Blue).
+
+    Ordinal Data:
+        Represents categories with a meaningful order but without precise differences between categories.
+        Example: Education levels (High School, Bachelor’s, Master’s).
