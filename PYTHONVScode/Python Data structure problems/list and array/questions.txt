@@ -1,0 +1,12 @@
+1. Maximum and Minimum in a List:
+Find the largest and smallest number in a given list using a loop.
+
+2. Counting Even and Odd Numbers:
+Given a list of numbers, count how many are even and how many are odd.
+
+
+3. Reverse a List:
+Write a program to reverse a given list without using built-in functions.
+
+4. Find an Element in a List:
+Ask the user for a number and check if it exists in a predefined list.
