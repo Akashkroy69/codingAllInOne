@@ -10,7 +10,8 @@ while num > 0:
     count +=1
     if (num & 1) == 1:
         break
-    num //=2
+    # num //=2
+    num = num >> 1
 
 
 if count > 0 :

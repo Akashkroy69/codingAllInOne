@@ -10,3 +10,5 @@ Write a program to reverse a given list without using built-in functions.
 
 4. Find an Element in a List:
 Ask the user for a number and check if it exists in a predefined list.
+
+5. sorting a list without sort method.
