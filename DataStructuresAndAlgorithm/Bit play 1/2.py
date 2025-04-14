@@ -6,6 +6,6 @@ num = 10
 place = 4
 
 # print((num >> place -1)&1)
-print(num & (1 << (place-1)))
+print(num & (1 << (place-1))) 
 
 

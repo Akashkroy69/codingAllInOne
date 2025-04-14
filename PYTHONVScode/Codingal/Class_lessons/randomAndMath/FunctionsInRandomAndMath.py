@@ -3,6 +3,7 @@ import random
 import math
 
 #help(math)
+random.seed(100)
 
 # random method generates value bet 0 and 1
 print(random.random())
@@ -24,3 +25,4 @@ print(math.tan(math.radians(45)))
 
 # activity 1: number guessing game.
 # activity 2: calculator for trigonometrical functions
+# activity 3: 
