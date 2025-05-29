@@ -60,6 +60,7 @@ while runningState:
         if event.type == pygame.MOUSEMOTION:
             circle.rect.topleft = event.pos
     if pygame.sprite.collide_rect(player, circle):
+        # __delete player
         print("Collision detected between player and circle!")
        
     pygame.display.update()
