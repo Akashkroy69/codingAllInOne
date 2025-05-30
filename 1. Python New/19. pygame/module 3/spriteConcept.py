@@ -57,13 +57,18 @@ class Circle(pygame.sprite.Sprite):
         super().__init__()
         # self.image = pygame.Surface((100, 100), pygame.SRCALPHA)  # Create a surface with transparency
         # pygame.draw.circle(self.image, color, (50, 50), 20)  # Draw a red circle on the surface
-        self.image = pygame.image.load(random.choice(list_of_bombs))
-        self.image = pygame.transform.scale(self.image, (100, 100))  # Scale the image to desired size
+        self.imageOriginal = pygame.image.load(random.choice(list_of_bombs))
+        self.imageOriginal = pygame.transform.scale(self.imageOriginal, (100, 100))  # Scale the image to desired size
+        self.image = self.imageOriginal.copy()
         self.rect = self.image.get_rect()
         self.rect.center = (posX, posY)
+        self.angle = 0  # Initialize angle for rotation
 
     def update(self):
         self.rect.y += 1  # Move the circle downwards
+        self.angle = (self.angle+1)%360 # Increment the angle for rotation
+        self.image = pygame.transform.rotate(self.imageOriginal, self.angle)  # Rotate the image slightly for effect
+        self.rect = self.image.get_rect(center=self.rect.center)  # Update the rect to match the new image position
     
 
 # bomb color list
@@ -73,10 +78,10 @@ list_of_bombs = [
      r"19. pygame\module 3\f2.png",
      r"19. pygame\module 3\f3.png",
      r"19. pygame\module 3\f4.png",
-        r"19. pygame\module 3\f5.png",
-        r"19. pygame\module 3\f6.png",
-        r"19. pygame\module 3\f7.png",
-        r"19. pygame\module 3\f8.png"
+     r"19. pygame\module 3\f5.png",
+     r"19. pygame\module 3\f6.png",
+     r"19. pygame\module 3\f7.png",
+     r"19. pygame\module 3\f8.png"
 ]
 
 player = Player(width // 2 - 50, height - 65)
@@ -132,6 +137,11 @@ while runningState:
                 if toRight == True:
                     player.flip()
                     toRight = False
+            elif event.key == pygame.K_SPACE:
+                 if toRight:
+                    player.rect.x += 80
+                 else:
+                    player.rect.x -= 80
                 
     
     if pygame.sprite.spritecollideany(player, bomb):
