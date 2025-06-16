@@ -7,7 +7,7 @@ pygame.init()
 width, height = 800, 600
 screen = pygame.display.set_mode((width, height))
 pygame.display.set_caption("Pygame Sprite Concept")
-backgraound = pygame.image.load(r"19. pygame\module 3\bg8.png")
+backgraound = pygame.image.load(r"19. pygame\module 3\bg7.png")
 # Scale the background image to fit the screen
 backgraound = pygame.transform.scale(backgraound, (width, height))
 
@@ -142,7 +142,12 @@ while runningState:
                     player.rect.x += 80
                  else:
                     player.rect.x -= 80
-                
+            # u char key press : jumping feature --> pending
+            # elif event.key == pygame.K_u:
+            #     count = 0
+            #     while count < 100:
+            #         player.rect.y -= 1
+            #         count += 1
     
     if pygame.sprite.spritecollideany(player, bomb):
          bomb_hit = pygame.sprite.spritecollide(player, bomb, True)
