@@ -6,6 +6,14 @@ width, height = 800, 600
 screen = pygame.display.set_mode((width, height))
 pygame.display.set_caption("Pygame Sprite Practice")
 
+
+# musci
+pygame.mixer.init()
+
+# Load music
+pygame.mixer.music.load(r"C:\Users\Lenovo\OneDrive\Desktop\aaVS_CODE\1. Python New\19. pygame\module 5 audio\myst.mp3.mp3")
+pygame.mixer.music.play(-1)  # Loop indefinitely
+
 class Player(pygame.sprite.Sprite):
     def __init__(self, posX, posY):
         super().__init__()
